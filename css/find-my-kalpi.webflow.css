@@ -1,0 +1,340 @@
+.w-layout-grid {
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+h1 {
+  letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: Karantina, sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+p {
+  margin-bottom: 18px;
+}
+
+.button-primary {
+  opacity: .9;
+  color: #000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  padding: 12px 18px;
+  font-size: 24px;
+  line-height: 20px;
+  text-decoration: none;
+  transition: all .2s;
+  display: flex;
+}
+
+.button-primary:hover {
+  opacity: 1;
+  box-shadow: 0 2px 5px 5px rgba(0, 0, 0, .2);
+}
+
+.button-primary:active {
+  transform: translate(0, 2px);
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, .2);
+}
+
+.button-primary.hero {
+  height: 60px;
+  color: #000;
+  letter-spacing: 1px;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  margin-right: 0;
+  padding: 0 18px 0 12px;
+  font-family: Karantina, sans-serif;
+  text-decoration: none;
+  display: flex;
+}
+
+.button-primary.hero:hover {
+  box-shadow: 0 5px 10px 1px rgba(0, 0, 0, .14);
+}
+
+.button-primary.hero:active {
+  box-shadow: 0 2px 3px 1px rgba(0, 0, 0, .14);
+}
+
+.body {
+  direction: rtl;
+  color: #000;
+  text-align: right;
+  font-family: IBM Plex Sans Hebrew, sans-serif;
+}
+
+.section-hero {
+  background-color: #eef8ff;
+  border-bottom: 1px solid rgba(0, 0, 0, .07);
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px 40px;
+  display: block;
+  position: relative;
+}
+
+.hero-container {
+  max-width: 960px;
+  flex: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-column-left {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-direction: column;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  justify-items: end;
+  padding-top: 0;
+  padding-right: 60px;
+  display: flex;
+  position: relative;
+}
+
+.hero-column-right {
+  flex-direction: column;
+  align-self: center;
+  align-items: flex-start;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+}
+
+.hero-columns {
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: stretch;
+  display: flex;
+  position: relative;
+}
+
+.icon-whatsapp {
+  height: 36px;
+  margin-right: 18px;
+}
+
+.section {
+  padding: 40px 20px 20px;
+}
+
+.section.map {
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px 20px;
+  display: flex;
+}
+
+.hero-container {
+  width: 100%;
+  max-width: 1140px;
+}
+
+.kalpi-note {
+  margin-bottom: 3px;
+  box-shadow: 0 5px 5px 2px rgba(0, 0, 0, .06);
+}
+
+.kalpi-notes-grid {
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-content: center;
+}
+
+.button-icon {
+  height: 24px;
+  margin-right: 6px;
+}
+
+.hero-button-wrapper {
+  max-width: 320px;
+  flex-direction: column;
+  display: flex;
+}
+
+.heading {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 48px;
+}
+
+.map {
+  width: 100%;
+}
+
+.paragraph {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.section-title-wrapper {
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+}
+
+.hero-grid {
+  grid-column-gap: 16px;
+  grid-template-rows: auto;
+  grid-template-columns: .75fr .75fr;
+  align-content: start;
+  display: flex;
+}
+
+.kalpimap {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+
+@media screen and (max-width: 991px) {
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .button-primary.hero {
+    margin-top: 12px;
+  }
+
+  .section-hero {
+    padding: 30px;
+  }
+
+  .hero-column-right {
+    text-align: center;
+    align-items: stretch;
+    margin-bottom: 20px;
+  }
+
+  .hero-columns {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+
+  .kalpi-note {
+    height: 180px;
+  }
+
+  .kalpi-notes-grid {
+    padding-right: 0;
+  }
+
+  .heading {
+    margin-bottom: 18px;
+    font-size: 48px;
+  }
+
+  .hero-grid {
+    flex-direction: column;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .button-primary.hero {
+    letter-spacing: 1px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 20px;
+  }
+
+  .section-hero {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero-column-left {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hero-column-right {
+    align-items: stretch;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hero-columns {
+    flex-direction: column-reverse;
+  }
+
+  .kalpi-note {
+    height: auto;
+  }
+
+  .kalpi-notes-grid {
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+  }
+
+  .hero-button-wrapper {
+    width: 100%;
+    max-width: 100%;
+    margin-top: -12px;
+    margin-bottom: 0;
+  }
+
+  .heading {
+    margin-bottom: 12px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .paragraph {
+    margin-bottom: 12px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .hero-grid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+#w-node-_2f89e938-db42-5a7a-a33e-91b46413257e-b36b2ac6 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+  align-self: start;
+}
+
+#w-node-b1526098-7025-2b4e-5d2e-592b8b064674-b36b2ac6, #w-node-_4d4aafac-12b8-634c-1181-94b90e734765-b36b2ac6, #w-node-_4d4aafac-12b8-634c-1181-94b90e734766-b36b2ac6, #w-node-_4d4aafac-12b8-634c-1181-94b90e734767-b36b2ac6, #w-node-_4d4aafac-12b8-634c-1181-94b90e734768-b36b2ac6 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+
