@@ -237,7 +237,8 @@ p {
 }
 
 .form-block {
-  width: 640px;
+  width: 100%;
+  max-width: 640px;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -328,6 +329,12 @@ p {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .form {
+    flex-flow: column wrap;
+  }
+}
+
 @media screen and (max-width: 479px) {
   h1 {
     text-align: center;
@@ -396,6 +403,24 @@ p {
   .hero-grid {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .form-block {
+    flex-wrap: wrap;
+    align-content: stretch;
+  }
+
+  .wa-icon {
+    display: none;
+  }
+
+  .flex-row {
+    object-fit: fill;
+    align-items: flex-start;
   }
 }
 
